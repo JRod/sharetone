@@ -1,17 +1,18 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Header from "./header";
+import Footer from "./footer";
+
 
 function LocationView({location}) {
   return (
     <div className="wrapper">
-      <header>
-        <Link to="/">Go back to "Home"</Link>
-      </header>
+      <Header/>
       <main>
         <h1>{location.contentfulLocation.name}</h1>
         <p>{location.contentfulLocation.loc.lat} {location.contentfulLocation.loc.lon}</p>
       </main>
-      <footer>Location provided by Me.</footer>
+      <Footer/>
     </div>
   )
 }

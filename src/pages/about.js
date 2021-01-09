@@ -1,11 +1,14 @@
 import React from "react";
 import { graphql, Link } from "gatsby"
+import Header from "../views/header";
+import PageView from "../views/pageview";
+
 function AboutPage ({data}) {
-
   return (
-    <p>{data.page.inhalt.inhalt}</p>
+    <>
+    <PageView page={data.page}/>
+    </>
   )
-
 }
 
 export default AboutPage
