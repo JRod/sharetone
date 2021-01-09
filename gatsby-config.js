@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Sharetone",
+    siteUrl: "https://preview-sharetone.gtsb.io"
   },
   plugins: [
     {
