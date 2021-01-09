@@ -7,33 +7,36 @@
   Gatsby minimal starter
 </h1>
 
-## 🚀 Quick start
+First sprint:
 
-1.  **Create a Gatsby site.**
+    Build a proof of concept (POC) Gatsby site to test their routing API, builds service, hosting, and Contentful integration
+    Use Gatsby’s Contentful plugin and connect to a test Contentful site
+    Create the following pages: 
+        home 
+        about
+        and a collection of pages for every city we’re in.
+    Build it on Gatsby Cloud and use their preview URL
+    Don’t worry about content or styling – this is only a POC. You can display the title of the page on a white background. That is enough for now
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Dev, your resume says you’re a little familiar with React, but not with GraphQL. It also looks like you’ve never used a CI/CD tool before.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+That’s fine. Gatsby has great documentation and you can skill up as you go.
+Here are a few resources to get you started:
 
-2.  **Start developing.**
+    Create a free Contentful account
+        Retrieve your Contentful API keys from Settings → API Keys
+        The Gatsby wizard will ask you for these keys before scaffolding your site
+    Run npm init gatsby in your terminal to quick start a new site
+        Choose Contentful as your CMS and add your API keys
+        Name your site and folder anything you want
+        Choose “responsive images”, “sitemap”, and “metatags”
+        Ignore the other options for now. You will use those features in a later sprint!
+        Now follow the rest of the “quick start” tutorial I linked to above
+    After the tutorial, create pages using Gatsby’s File System Route API (/home, /about, and three cities under a /location route)
+    Build and deploy the site on Gatsby Cloud. And you’re done!
 
-    Navigate into your new site’s directory and start it up.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
+  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
