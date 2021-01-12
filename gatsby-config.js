@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Sharetone",
-    siteUrl: "https://preview-sharetone.gtsb.io"
+    siteUrl: "https://sharetone.gtsb.io"
   },
   plugins: [
     {
@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-filesystem",
       options: {

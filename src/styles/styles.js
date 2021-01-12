@@ -6,8 +6,8 @@ export const pageStyles = {
 
 }
 export const headingStyles = {
-  marginTop: 32,
-  marginBottom: 12
+  color: "#232129",
+  fontFamily: "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
 }
 export const headingAccentStyles = {
   color: "#663399",
@@ -21,11 +21,6 @@ export const codeStyles = {
   backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
   borderRadius: 4,
-}
-export const listStyles = {
-  marginBottom: 12,
-
-  paddingLeft: 0,
 }
 export const listItemStyles = {
   fontWeight: "300",
@@ -43,5 +38,4 @@ export const linkStyle = {
 export const docLinkStyle = {
   ...linkStyle,
   listStyleType: "none",
-  marginBottom: 24,
 }

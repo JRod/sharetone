@@ -1,13 +1,13 @@
 import React from "react";
-import { graphql, Link } from "gatsby"
-import Header from "../views/header";
+import { graphql} from "gatsby"
 import PageView from "../views/pageview";
+import Layout from "../components/layout";
 
 function AboutPage ({data}) {
   return (
-    <>
-    <PageView page={data.page}/>
-    </>
+    <Layout>
+      <PageView page={data.page}/>
+    </Layout>
   )
 }
 

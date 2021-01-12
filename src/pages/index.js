@@ -1,21 +1,13 @@
 import * as React from "react"
-import {pageStyles} from "../styles/styles";
-import Header from "../views/header";
-import {Helmet} from "react-helmet";
-import Footer from "../views/footer";
-
+import Layout from "../components/layout";
 
 const IndexPage = () => {
 
   return (
-    <>
-    <Helmet>
-      <title>AudioC0RE</title>
-    </Helmet>
-    <Header/>
-    <main style={pageStyles}/>
-    <Footer/>
-    </>
+    <Layout>
+      <h1>Welcome to our brand new site.</h1>
+      <p>Check out where you can find us.</p>
+    </Layout>
   )
 }
 

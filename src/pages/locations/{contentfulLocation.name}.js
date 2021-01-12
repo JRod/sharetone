@@ -1,10 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import LocationView from "../../views/locationview"
+import Layout from "../../components/layout";
 
 export default function contentfulLocation(props) {
  const location = props.data
- return <LocationView location={location} />
+ return (
+   <Layout>
+   <LocationView location={location} />
+   </Layout>
+ )
 }
 export const query = graphql`
   query($id: String!) {

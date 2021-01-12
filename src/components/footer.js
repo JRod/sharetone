@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer style={pageStyles}>
       Locations provided by Contentful.
-      <Link style={linkStyle}  to='/about'>About AudioC0RE</Link>
+
     </footer>
   )
 
