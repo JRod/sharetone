@@ -12,6 +12,8 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <title>Audi0Core</title>
+        <meta name="description" content="Best Audiosharing in the World" />
+        <html lang="en"  />
       </Helmet>
       <div className="container  mx-auto font-sans ">
         <Header />
