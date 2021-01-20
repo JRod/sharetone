@@ -5,8 +5,8 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <h1>Welcome to our brand new site.</h1>
-      <p>Check out where you can find us.</p>
+      <h1 className="font-audiocore">Welcome to our brand new site.</h1>
+      <p className="font-audiocore">Check out where you can find us.</p>
     </Layout>
   )
 }

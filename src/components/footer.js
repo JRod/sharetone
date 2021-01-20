@@ -1,12 +1,9 @@
 import React from "react";
-import {linkStyle, pageStyles} from "../styles/styles";
-import {Link} from "gatsby";
 
 const Footer = () => {
   return (
-    <footer style={pageStyles}>
+    <footer className="font-mono text-audio-black">
       Locations provided by Contentful.
-
     </footer>
   )
 

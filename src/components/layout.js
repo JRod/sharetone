@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./header"
 import Footer from "./footer"
 import Helmet from "react-helmet";
-import {headingStyles, linkStyle} from "../styles/styles";
+
 import LocationsNav from "./locationsNav";
 import {Link} from "gatsby";
 

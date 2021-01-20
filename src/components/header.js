@@ -1,7 +1,5 @@
 import React from "react";
-import {headingStyles, linkStyle, pageStyles} from "../styles/styles";
-import {Link} from "gatsby";
-import LocationsNav from "./locationsNav";
+
 
 const Header = () => {
 
@@ -10,7 +8,7 @@ const Header = () => {
         <h1 className="font-mono font-light text-lg text-blue-700 mb-4">
           AudioC0RE
         </h1>
-        <h2 style={headingStyles}>the leading headphones sharing app in the world!</h2>
+        <h2 className="font-mono text-audio-black">the leading headphones sharing app in the world!</h2>
 
     </header>
   )

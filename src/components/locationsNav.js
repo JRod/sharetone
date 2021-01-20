@@ -1,5 +1,5 @@
 import React from "react";
-import {docLinkStyle,  listStyles} from "../styles/styles";
+
 import {useStaticQuery,graphql, Link} from "gatsby";
 
 const LocationsNav = () => {
@@ -21,7 +21,7 @@ const LocationsNav = () => {
 
   return (
     <>
-      <h4 className="font-mono text-2xl mb-5">Our Locations</h4>
+      <h4 className="font-mono text-2xl underline mb-5">Our Locations</h4>
       <ul>
         {data.locations.nodes.map(location => (
           <li className="font-mono font-light text-lg text-blue-700 mb-4" key={location.id}>
