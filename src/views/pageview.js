@@ -2,7 +2,7 @@ import * as React from "react"
 
 function PageView({page}) {
   return (
-    <div className="font-mono text-base" dangerouslySetInnerHTML={{ __html: page.inhalt.inhalt }}/>
+    <div  dangerouslySetInnerHTML={{ __html: page.inhalt.inhalt }}/>
   )
 }
 

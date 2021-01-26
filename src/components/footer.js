@@ -1,10 +1,11 @@
 import React from "react";
+import Footermenu from "./footermenu";
 
 const Footer = () => {
   return (
-    <footer className="font-mono text-audio-black">
-      Locations provided by Contentful.
-    </footer>
+    <>
+      <Footermenu/>
+    </>
   )
 
 }

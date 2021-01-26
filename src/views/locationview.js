@@ -1,12 +1,15 @@
 import * as React from "react"
 
+import {GatsbyImage} from "gatsby-plugin-image";
+import {Heading, Text} from "@chakra-ui/react"
+function LocationView({location,image}) {
+  const {name,loc} = location
 
-function LocationView({location}) {
   return (
     <>
-      <h1 className="font-mono text-2xl">{location.contentfulLocation.name}</h1>
-      <p>Latitude: {location.contentfulLocation.loc.lat}</p>
-      <p>Longitude: {location.contentfulLocation.loc.lon}</p>
+      <Heading as="h1" >{name}</Heading>
+      <GatsbyImage image={image} alt={name} layout="constrained"/>
+      <Text>Latitude: {loc.lat} Longitude: {loc.lon}</Text>
     </>
   )
 }

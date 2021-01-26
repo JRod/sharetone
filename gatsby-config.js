@@ -21,11 +21,12 @@ module.exports = {
         spaceId: CONTENTFUL_SPACE_ID,
       },
     },
+    "@chakra-ui/gatsby-plugin",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-source-filesystem",
       options: {
