@@ -1,9 +1,10 @@
-import React from "react";
-import { graphql} from "gatsby"
-import PageView from "../views/pageview";
+import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout";
+import PageView from "../views/pageview";
 
-function AboutPage ({data}) {
+export default function contentfulLocation({data}) {
+
   return (
     <Layout>
       <PageView page={data.page}/>
@@ -11,11 +12,9 @@ function AboutPage ({data}) {
   )
 }
 
-export default AboutPage
-
 export const query = graphql`
-    {
-        page: contentfulPage {
+    query($id: String!)  {
+        page:contentfulPage(id: { eq: $id }) {
             name
             inhalt {
                 inhalt
