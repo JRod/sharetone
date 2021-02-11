@@ -15,12 +15,25 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Sharetone`,
+        short_name: `Sharetone`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`
+      },
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         accessToken: CONTENTFUL_ACCESS_TOKEN,
         spaceId: CONTENTFUL_SPACE_ID,
       },
     },
+    'gatsby-plugin-offline',
     "@chakra-ui/gatsby-plugin",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",

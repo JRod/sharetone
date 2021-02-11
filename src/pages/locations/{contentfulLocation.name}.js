@@ -14,6 +14,7 @@ export default function contentfulLocation({data}) {
    </Layout>
  )
 }
+
 export const query = graphql`
   query($id: String!,$name: String) {
     contentfulLocation(id: { eq: $id }) {
