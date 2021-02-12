@@ -11,7 +11,7 @@ if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
 module.exports = {
   siteMetadata: {
     title: "Sharetone",
-    url: "https://sharetone.gtsb.io",
+    siteUrl: "https://sharetone.gtsb.io",
     description: "Best headgear in the world",
     twitterUsername: "@snotrod",
     titleTemplate: "%s - Sharetone",
