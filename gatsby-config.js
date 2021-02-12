@@ -11,7 +11,11 @@ if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
 module.exports = {
   siteMetadata: {
     title: "Sharetone",
-    siteUrl: "https://sharetone.gtsb.io"
+    url: "https://sharetone.gtsb.io",
+    description: "Best headgear in the world",
+    twitterUsername: "@snotrod",
+    titleTemplate: "%s - Sharetone",
+    image: "/sharestone_logo.png"
   },
   plugins: [
     {
@@ -25,6 +29,15 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon.png`
       },
+    },
+    {
+      resolve: `gatsby-source-formium`,
+      options: {
+        // Get your projectId from https://dashboard.formium.io
+        projectId: process.env.GATSBY_FORMIUM_PROJECTID,
+        // Generate a personal access token by going to https://dashboard.formium.io/account#tokens
+        accessToken: process.env.FORMIUM_TOKEN,
+      }
     },
     {
       resolve: "gatsby-source-contentful",
