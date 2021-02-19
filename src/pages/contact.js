@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { FormiumForm ,defaultComponents } from '@formium/react';
-import Layout from "../components/layout";
+import Layout from "../components/layouts/layout";
 import { formium } from '../lib/formium';
 import {Input , Button, Textarea as ChakraTextarea} from "@chakra-ui/react"
 

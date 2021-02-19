@@ -18,7 +18,7 @@ function PageView({page}) {
 }
 const HeadPhone = () => {
   return(
-    <StaticImage src="../images/headphone.jpg" alt="headphones" layout="fixed" width={600} height={400}/>
+    <StaticImage src="../../assets/images/headphone.jpg" alt="headphones" layout="fixed" width={600} height={400}/>
   )
 }
 export default PageView

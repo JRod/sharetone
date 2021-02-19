@@ -1,5 +1,5 @@
 import React from "react";
-import Footermenu from "./footermenu";
+import Footermenu from "../ui/footermenu";
 
 const Footer = () => {
   return (

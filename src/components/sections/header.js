@@ -1,6 +1,6 @@
 import React from "react";
-import TopMenu from "./topmenu";
-import Brand from "./brand";
+import TopMenu from "../ui/topmenu";
+import Brand from "../ui/brand";
 import {Box,  Spacer, Center, HStack} from "@chakra-ui/react"
 import {StaticImage} from "gatsby-plugin-image";
 
@@ -24,7 +24,7 @@ const Header = () => {
 }
 const Logo = () => {
   return(
-    <StaticImage src="../images/sharestone_logo.png" alt="sharestone logo" layout="fixed" width={150} height={150}/>
+    <StaticImage src="../../assets/images/sharestone_logo.png" alt="sharestone logo" layout="fixed" width={150} height={150}/>
   )
 
 }

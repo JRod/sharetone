@@ -1,9 +1,9 @@
 import React from "react"
 
-import Header from "./header"
-import Footer from "./footer"
-import SideBar from "./sidebar";
-import SEO from "./seo";
+import Header from "../sections/header"
+import Footer from "../sections/footer"
+import SideBar from "../sections/sidebar";
+import SEO from "../sections/seo";
 import {Box, Flex, VStack,HStack} from "@chakra-ui/react"
 
 const Layout = ({ children }) => {

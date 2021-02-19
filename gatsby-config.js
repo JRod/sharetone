@@ -27,8 +27,23 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/icon.png`
+        icon: `src/assets/images/icon.png`
       },
+    },
+    'gatsby-plugin-offline',
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-transformer-sharp",
+    "@chakra-ui/gatsby-plugin",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/assets/images/",
+      },
+      __key: "images",
     },
     {
       resolve: `gatsby-source-formium`,
@@ -45,21 +60,6 @@ module.exports = {
         accessToken: CONTENTFUL_ACCESS_TOKEN,
         spaceId: CONTENTFUL_SPACE_ID,
       },
-    },
-    'gatsby-plugin-offline',
-    "@chakra-ui/gatsby-plugin",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-image",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
     },
   ],
 };

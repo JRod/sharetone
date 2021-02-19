@@ -1,6 +1,6 @@
 import "@fontsource/open-sans"
 import "@fontsource/noto-mono"
-import "/src/styles/global.css"
+import "/src/assets/styles/global.css"
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(

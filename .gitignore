@@ -3,3 +3,5 @@ node_modules/
 public
 /.idea/
 /.env
+.vscode/settings.json
+sharetone.code-workspace
