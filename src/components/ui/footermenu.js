@@ -1,17 +1,18 @@
 import React from 'react';
 import {Link as GatsbyLink} from "gatsby";
-import {Link} from "@chakra-ui/react";
+import {Link, Flex, Spacer} from "@chakra-ui/react";
 
 const Footermenu = () => {
   return (
     <>
 
-    <div>
+    <Flex>
       <span className="copyright">© 2021 AudioC0re</span>
-    </div>
-    <div>
+    </Flex>
+    <Spacer/>
+    <Flex>
       <Link as={GatsbyLink} color="teal.500" to="/contact">Contact us!</Link>
-    </div>
+      </Flex>
     </>
   );
 };

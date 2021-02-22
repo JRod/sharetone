@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layouts/layout";
 import PageView from "../components/layouts/pageview";
+import Layout from "../components/layouts/layout";
 
 export default function contentfulLocation({data}) {
 
