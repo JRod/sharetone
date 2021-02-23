@@ -1,10 +1,10 @@
 import * as React from "react"
 
-import Layout from "../components/layouts/layout";
+import LeftSideBarLayout from "../components/layouts/leftsidebarlayout";
 
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <LeftSideBarLayout>
 
     <main  >
       <title>Not found</title>
@@ -27,7 +27,7 @@ const NotFoundPage = () => {
 
       </p>
     </main>
-    </Layout>
+    </LeftSideBarLayout>
   )
 }
 

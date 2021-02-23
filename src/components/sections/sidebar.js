@@ -1,11 +1,11 @@
 import React from "react";
-import SideMenu from "../ui/sidemenu";
 
-const SideBar =() => {
+
+const SideBar =(props) => {
 
   return(
     <div id="sidebar" >
-      <SideMenu/>
+      {props.children}
     </div>
   )
 

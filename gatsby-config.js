@@ -1,13 +1,5 @@
 require("dotenv").config()
 
-const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env
-
-if (!CONTENTFUL_SPACE_ID || !CONTENTFUL_ACCESS_TOKEN) {
-  throw new Error(
-    "Contentful spaceId and the access token need to be provided."
-  )
-}
-
 module.exports = {
   siteMetadata: {
     title: "Sharetone",
@@ -34,9 +26,9 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
-    "@chakra-ui/gatsby-plugin",
+    "gatsby-transformer-sharp",    
     "gatsby-plugin-image",
+    "@chakra-ui/gatsby-plugin",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -53,13 +45,17 @@ module.exports = {
         // Generate a personal access token by going to https://dashboard.formium.io/account#tokens
         accessToken: process.env.FORMIUM_TOKEN,
       }
-    },
+    },    
     {
-      resolve: "gatsby-source-contentful",
+      resolve: "gatsby-source-strapi",
       options: {
-        accessToken: CONTENTFUL_ACCESS_TOKEN,
-        spaceId: CONTENTFUL_SPACE_ID,
+        apiURL: "http://localhost:1337",
+        contentTypes: [
+          "locations",          
+        ],
+        queryLimit: 1000,
       },
     },
+    
   ],
 };

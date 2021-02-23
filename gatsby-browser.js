@@ -2,6 +2,7 @@ import "@fontsource/open-sans"
 import "@fontsource/noto-mono"
 import "/src/assets/styles/global.css"
 
+
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `This application has been updated. ` +

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import {Box,Flex,Heading,Stack} from "@chakra-ui/react"
 import {StaticImage} from "gatsby-plugin-image";
 import LocationsMenu from "../ui/locationsMenu"
+
 export default function Hero({title,subtitle,image,...rest}) {
   return (
     <Flex
@@ -13,12 +14,13 @@ export default function Hero({title,subtitle,image,...rest}) {
       minH="70vh"
       px={8}
       mb={16}
+      
       {...rest}
     >
       <Stack
         spacing={4}
         w={{ base: "80%", md: "40%" }}
-        align={["center", "center", "flex-start", "flex-start"]}
+        align={["center", "center", "flex-start", "flex-start"]}        
       >
         <Heading
           as="h1"
@@ -40,9 +42,9 @@ export default function Hero({title,subtitle,image,...rest}) {
         >
           {subtitle}
         </Heading>     
-        <LocationsMenu/>           
+                
       </Stack>      
-      <Box borderWidth="1px" borderRadius="full"  width={800} height={400}>            
+      <Box width={600} height={400}>            
         <StaticImage src="../../assets/images/headphone.jpg" alt="headphones"  />
       </Box>
     </Flex>
@@ -59,7 +61,7 @@ Hero.propTypes = {
 
 Hero.defaultProps = {
   title: "Welcome to AudioC0re",
-  subtitle:"The leading headphones sharing app in the world! Check out our new Locations ",
+  subtitle:"The leading headphones sharing app in the world! ",
   image: "https://source.unsplash.com/collection/404339/800x600",
   ctaText: "Create your account now",
   ctaLink: "/signup",

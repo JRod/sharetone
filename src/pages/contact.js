@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { FormiumForm ,defaultComponents } from '@formium/react';
-import Layout from "../components/layouts/layout";
+import FullPageLayout from "../components/layouts/fullpagelayout";
 import { formium } from '../lib/formium';
 import {Input , Button, Textarea as ChakraTextarea} from "@chakra-ui/react"
 
@@ -31,11 +31,11 @@ const contactComponents={
 export default function ContactPage({ data }) {
   const [success, setSuccess] = React.useState(false);
   if (success) {
-    return (<Layout><div>Thank you! Your response has been recorded.</div></Layout>)
+    return (<FullPageLayout><div>Thank you! Your response has been recorded.</div></FullPageLayout>)
   }
 
   return(
-    <Layout>
+    <FullPageLayout>
     <FormiumForm data={data.formiumForm}
                  components={contactComponents}
                  onSubmit={async (values) => {
@@ -44,7 +44,7 @@ export default function ContactPage({ data }) {
                    setSuccess(true);
                  }}
     />
-    </Layout>
+    </FullPageLayout>
   )
 }
 export const query = graphql`

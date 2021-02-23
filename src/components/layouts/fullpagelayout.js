@@ -2,13 +2,12 @@ import React from "react"
 
 import SEO from "../sections/seo"
 import Header from "../sections/header"
-import Hero from "../sections/hero"
 import Footer from "../sections/footer" 
 
 import { Flex } from "@chakra-ui/react"
 
 
-export default function LandingLayout(props) {
+export default function FullPageLayout(props) {
   return (
     <>
         <SEO/>
@@ -25,8 +24,7 @@ export default function LandingLayout(props) {
           m="0 auto" 
           {...props}
           >
-            <Header />       
-            <Hero/>     
+            <Header />                   
             {props.children}
             <Footer />
         </Flex>

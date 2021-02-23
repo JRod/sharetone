@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, Button, Text } from "@chakra-ui/react"
+import { Text } from "@chakra-ui/react"
 import {Link as GatsbyLink} from "gatsby"
+import LocationsMenu from "./locationsMenu";
 
 
 const MenuItems = (props) => {
@@ -12,32 +13,20 @@ const MenuItems = (props) => {
       display="block"
       {...rest}
     >
-      <Link color="teal.500" to={to}>{children}</Link>
+      <GatsbyLink to={to}>{children}</GatsbyLink>
     </Text>
   )
 }
 
 const TopMenu = () => {
   return (
-    <>
-      
+    <>      
+    <LocationsMenu title={""}/>
+      <MenuItems to="/">AudioC0RE</MenuItems>      
       <MenuItems to="/how">How It works </MenuItems>
       <MenuItems to="/faetures">Features </MenuItems>
-      <MenuItems to="/pricing">Pricing </MenuItems>
-      <MenuItems to="/">
-        <Button marginRight={3} colorScheme="teal" variant="outline">
-          <Link as={GatsbyLink} color="teal.500" to="/">Home</Link>
-        </Button>
-      </MenuItems>
-      <MenuItems to="/about" isLast>
-        <Button colorScheme="teal" variant="outline">
-          <Link as={GatsbyLink} color="teal.500" to='/about'>About AudioC0RE</Link>
-        </Button>
-      </MenuItems>
-
-      
-
-      
+      <MenuItems to="/pricing">Pricing </MenuItems>      
+      <MenuItems to="/about" isLast>About us </MenuItems>                  
     </>
   )
 }
